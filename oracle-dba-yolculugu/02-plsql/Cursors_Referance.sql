@@ -13,7 +13,7 @@ OPEN w_imlec FOR w_query;
 LOOP
 FETCH w_imlec INTO w_eski_maas,w_yeni_maas;
 EXIT WHEN w_imlec%NOTFOUND;
-dbms_output.put_lıne('Eski Maas:'||w_eski_maas||' Zamlı Maas:'||w_yeni_maas);
+dbms_output.put_line('Eski Maas:'||w_eski_maas||' Zamlı Maas:'||w_yeni_maas);
 END LOOP;
 CLOSE w_imlec;
 END;
