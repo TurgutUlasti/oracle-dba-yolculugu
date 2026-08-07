@@ -23,5 +23,5 @@ dbms_output.put_line('Ben 40 lı yaşlardayım !'|| yasi);
 Else
 dbms_output.put_line('Ben Bir Çocuk Değilim !'|| yasi);
 
- end IF;
+ End IF;
 END;
