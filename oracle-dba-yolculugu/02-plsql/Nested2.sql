@@ -2,7 +2,7 @@
 --Örnek:2 Personel İsimlerini Bir Dizide Tutacağız!
 DECLARE
 Cursor c_employees IS SELECT first_name,last_name From employees;
---TYPE ndt_list IS TABLE OF employees.first_name%TYPE;
+TYPE ndt_list IS TABLE OF employees.first_name%TYPE;
 TYPE ndt_list IS TABLE OF c_employees%ROWTYPE;
 name_list ndt_list := ndt_list();
 counter INTEGER :=0;
