@@ -4,12 +4,12 @@
 --set SERVEROUTPUT on;
 BEGIN
     FOR sayac IN  1..5 LOOP
-    --EXIT  WHEN sayac=3;
-    --CONTINUE WHEN sayac=3;
-  /*  IF  sayac= 3 THEN
+    EXIT  WHEN sayac=3;
+    CONTINUE WHEN sayac=3;
+    IF  sayac= 3 THEN
     EXIT;
     --CONTINUE;
-    END IF;*/
+    END IF;
         dbms_output.put_lıne('Sayac :'|| sayac);
     END LOOP;
 END;
