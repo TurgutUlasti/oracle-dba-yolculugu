@@ -10,13 +10,13 @@ BEGIN
 For r_emp IN c_emp LOOP
 
 IF r_emp.salary<5000 THEN 
-dbms_output.put_lıne(r_emp.employee_id||' Update Edildi');
+dbms_output.put_line(r_emp.employee_id||' Update Edildi');
 UPDATE employees2 SET 
             salary=salary*1.2
     --where employee_id = r_emp.employee_id;
     Where CURRENT OF c_emp;
         END IF;
 END LOOP;
-Commıt;
+Commit;
 END;
 
