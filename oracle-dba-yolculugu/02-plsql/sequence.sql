@@ -3,7 +3,7 @@
 --Pseudocolumns kullanımı (Cureval ,Nextval) (Sequence)
 
 --desc regions;
---create  sequence test_seq start WITH 5 INCREMENT BY 1;
+create  sequence test_seq start WITH 5 INCREMENT BY 1;
 
 DECLARE
 seq_num number;
@@ -16,4 +16,4 @@ update regıons SET regıon_name='Antartika'
 where regıon_ıd=seq_num;
 COMMIT;
 END;
---select * from regıons;
+select * from regıons;
