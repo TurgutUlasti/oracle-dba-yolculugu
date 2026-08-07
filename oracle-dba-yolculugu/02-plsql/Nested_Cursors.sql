@@ -20,23 +20,23 @@ OPEN c_loc;
 loop 
 FETCH c_loc INTO r_loc;
 EXIT WHEN c_loc%NOTFOUND;
-dbms_output.new_lıne;
-dbms_output.put_lıne
+dbms_output.new_line;
+dbms_output.put_line
 ('Lokasyon : ' || r_loc.City
 ||'('||r_loc.location_id||')');
 OPEN c_dept(r_loc.location_id);
 LOOP
 FETCH c_dept INTO r_dept;
 EXIT WHEN c_dept%NOTFOUND;
-dbms_output.new_lıne;
-dbms_output.put_lıne
+dbms_output.new_line;
+dbms_output.put_line
 ('      '|| r_dept.department_name||'('||r_dept.department_id||')');
 OPEN c_emp(r_dept.department_id);
 LOOP
 FETCH c_emp INTO r_emp;
 EXIT WHEN c_emp%NOTFOUND;
-dbms_output.new_lıne;
-dbms_output.put_lıne('     '|| r_emp.ad_soyad || '('||r_emp.employee_id||' - ' ||r_emp.job_id 
+dbms_output.new_line;
+dbms_output.put_line('     '|| r_emp.ad_soyad || '('||r_emp.employee_id||' - ' ||r_emp.job_id 
 || '-'||TO_CHAR(r_emp.hire_date,'dd/mm/yyyy') || ')' );
 END LOOP;
 CLOSE c_emp;
