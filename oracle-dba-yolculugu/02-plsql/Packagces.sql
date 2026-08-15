@@ -60,6 +60,6 @@ END mytypes;
 EXECUTE myTypes.calisanlar(60);
 
 SELECT
-    mytypes.daırealanı(3)
+    mytypes.dairealanı(3)
 FROM
     dual;
