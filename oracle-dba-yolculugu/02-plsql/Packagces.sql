@@ -3,7 +3,7 @@ CREATE OR REPLACE PACKAGE mytypes AS
             emp_id     employees.employee_id%TYPE,
             first_name employees.first_name%TYPE
     );
-    pı CONSTANT NUMBER(3, 2) := 3.14;
+    PI CONSTANT NUMBER(3, 2) := 3.14;
     TYPE cursor_type IS REF CURSOR;
     my_execption EXCEPTION;
     PROCEDURE calisanlar (
@@ -49,7 +49,7 @@ CREATE OR REPLACE PACKAGE BODY mytypes AS
     ) RETURN NUMBER IS
         w_sonuc NUMBER;
     BEGIN
-        w_sonuc := mytypes.pı * power(r, 2);
+        w_sonuc := mytypes.PI * power(r, 2);
         RETURN ( w_sonuc );
     END;
 
@@ -60,6 +60,6 @@ END mytypes;
 EXECUTE myTypes.calisanlar(60);
 
 SELECT
-    mytypes.dairealanı(3)
+    mytypes.dairealani(3)
 FROM
     dual;
