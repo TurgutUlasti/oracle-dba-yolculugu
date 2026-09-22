@@ -25,6 +25,6 @@ alter system set pga_aggregate_target=0;
 
 --next
 
-shutdown immedate;
+shutdown immediate;
 startup;
 
