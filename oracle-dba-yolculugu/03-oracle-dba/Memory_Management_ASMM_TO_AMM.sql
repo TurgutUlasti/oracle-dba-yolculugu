@@ -19,7 +19,7 @@ create spfile='/u01/app/oracle/product/19.0.0/dbhome_1/dbs/yedekler/spfileORCL_A
 
 -- Automatic Shared Memory Managament TO-> Automatic Memory Managment 
 alter system set memory_target=<X>M scope=spfile;
-alter system set memory_max_target=<X>M cope=spfile;
+alter system set memory_max_target=<X>M scope=spfile;
 alter system set sga_target=0 scope=spfile;
 alter system set pga_aggregate_target=0;
 
